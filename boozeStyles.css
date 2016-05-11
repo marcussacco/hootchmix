@@ -1,0 +1,259 @@
+
+
+#mainContain{
+  width: 420px;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,.02);
+}
+
+#boozeBox,#mixerBox{
+  width: 70%;
+  margin: 0 auto;
+  background: rgba(255,255,255,.04);
+  padding: 5%;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.21);
+     -moz-box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.1);
+          box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.1);
+}
+
+.boozeItem, .mixerItem{
+  margin-top: 10px;
+  height: 37px;
+}
+
+.unitBox{
+  margin-top: 8px;
+  margin-right: 12px;
+  float: right;
+}
+
+.unit{
+  display: inline;
+  font-size:20px;
+  font-family: "Roboto", sans-serif;
+  padding: 4px;
+  margin: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: background-color .3s;
+          transition: background-color .3s;
+}
+
+.unitSelected{
+  border: 2px solid rgba(255,255,255,.4);
+  background: rgba(255,255,255,.1);
+  margin: 0 auto;
+}
+
+h1{
+  display: inline;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2.3em;
+  margin-left: 5px;
+}
+
+input{
+  height: 35px;
+  width: 100px;
+  display: inline;
+  margin: 0;
+  margin-left: 5px;
+  float: left;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border: 0px;
+  border-radius: 5px;
+  background: rgba(255,255,255,.1);
+  -webkit-transition: background-color .3s;
+          transition: background-color .3s;
+}
+
+input:focus{
+  background: rgba(255,255,255,.2);
+}
+
+input::-webkit-input-placeholder {
+color: #d6d8db !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: #d6d8db !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #d6d8db !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: #d6d8db !important;  
+}
+
+#btnContain{
+  text-align:center;
+  margin: 25px auto;
+}
+
+button{
+  font-size: 40px;
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background: rgba(200,200,220,.05);
+  height: 60px;
+  width: 110px;
+  cursor: pointer;
+  -webkit-transition: background-color .3s;
+          transition: background-color .3s;
+}
+
+button:hover{
+  background: rgba(200,200,220,.1);
+}
+
+#output{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 45px;
+  font-family: Open Sans Condensed;
+}
+
+.unitTail{
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  display: inline;
+  float: left;
+}
+
+.pTail{
+  font-family: 'Roboto', sans-serif;
+  margin: 5px;
+  font-size: 25px;
+  display: inline;
+}
+
+.addAndClear{
+}
+
+.adder{
+  display: inline-block;
+  width: 35px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background: rgba(255,255,255,.04);
+  -webkit-transition: background-color .3s;
+          transition: background-color .3s;
+}
+
+.adder:hover{
+  background: rgba(255,255,255,.1);
+}
+
+#removeBooze, #removeMixers{
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  background: rgba(255,255,255,.07);
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder {
+   text-align: center;  
+}
+
+::-moz-placeholder { 
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0;
+}
+
+body{
+  margin: 0;
+  font: 15px arial;
+  color: white;
+  height: 1000px;
+  width: 100%;
+  background: #290a59; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #290a59 0%, #c95f17 100%);
+  background: -webkit-linear-gradient(-45deg,  #290a59 0%,#c95f17 100%);
+  background: linear-gradient(135deg,  #290a59 0%,#c95f17 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#290a59', endColorstr='#c95f17',GradientType=1 );
+
+}
+
+#importantMessage{
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  width: 50%;
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 767px){
+  #mainContain{
+    width: 95%;
+  }
+
+  #boozeBox,#mixerBox{
+    width: 90%;
+    padding: 2%;
+  }
+
+  .boozeItem, .mixerItem{
+    height: 45px;
+  }
+
+  input{
+    height: 35px;
+    width: 30%;
+    font-size: 20;
+  }
+  button{
+  font-size: 30px;
+  }
+}
+
+
+
+
+
+
